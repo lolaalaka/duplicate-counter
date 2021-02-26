@@ -17,7 +17,7 @@ const Input = () => {
 
   return (
     <>
-      <p className="nb">
+      <p className ="nb">
         *create a uniquely named folder to store your selections, a folder name
         cannot appear more than once*
       </p>
