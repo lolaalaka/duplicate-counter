@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  background-blend-mode: screen;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+input {
+  padding: 0.8rem;
+  margin-left: 10px;
+  border: none;
+  font-size: 1rem;
+  background: white;
+}
+
+.inputbox {
+  min-width: 25vw;
+}
+
+input:focus {
+  outline: none;
+}
+
+.datalist-box {
+  max-width: 150px;
+}
+
+.datalist-box::placeholder {
+  font-size: 0.8rem;
+}
+
+.plus-btn {
+  background: white;
+  color: #51a872;
+  cursor: pointer;
+  padding: 0.2rem;
+  font-size: 30px;
+  margin-left: 10px;
+  transition: all 1s ease;
+}
+.plus-btn:hover {
+  background: #51a872;
+  color: white;
+}
+button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.folder-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.folderandtext {
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.foldericon {
+  color: #f3d26f;
+  font-size: 35px;
+  padding-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+.foldericon:hover {
+  color: #f8d775b6;
+}
+
+.foldertext {
+  color: black;
+  transition: all 1s ease;
+}
+
+.foldertext:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 40%;
+}
+
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.trash-btn {
+  font-size: 20px;
+  background: rgb(207, 37, 37);
+  color: white;
+  padding: 0.5rem;
+  transition: all 1s ease;
+}
+
+.trash-btn:hover {
+  background: white;
+  color: rgb(207, 37, 37);
+}
+
+.analysis-btn {
+  color: #f3b860;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.analysis-btn:hover {
+  color: #496c8073;
+}
+
+.analysis-btnopen {
+  color: #496c8073;
+}
+
+.duplicate {
+  max-width: 40%;
+  text-align: left;
+  margin: 10px auto;
+}
+
+.duplicatecounter {
+  display: flex;
+  max-width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding-left: 0.5rem;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+.replicateparagraph {
+  font-size: 12px;
+  color: black;
+  margin: 10px;
+}
+
+.replicateparagraph:hover {
+  text-decoration: underline;
+}
