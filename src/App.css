@@ -148,6 +148,7 @@ button:focus {
   max-width: 40%;
   text-align: left;
   margin: 10px auto;
+  color: #8d8c8c;
 }
 
 .duplicatecounter {
@@ -169,4 +170,10 @@ button:focus {
 
 .replicateparagraph:hover {
   text-decoration: underline;
+}
+
+.nb {
+  text-align: center;
+  padding-top: 20px;
+  color: #8d8c8c;
 }

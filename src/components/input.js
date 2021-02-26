@@ -16,31 +16,37 @@ const Input = () => {
   };
 
   return (
-    <form onSubmit={submitEntry}>
-      <input
-        type="text"
-        name="selection"
-        placeholder="type in your selections"
-        className="inputbox"
-      />{" "}
-      <label htmlFor="item"></label>
-      <input
-        list="items"
-        name="ticket"
-        id="item"
-        className="datalist-box"
-        placeholder="create unique folder"
-      />
-      <datalist id="items">
-        {[...new Set(values.map((x) => x.ticket))].map((item, index) => (
-          <option key={index}> {item} </option>
-        ))}
-      </datalist>{" "}
-      <button type="submit" className=" plus-btn">
-        {" "}
-        <i className="fas fa-arrow-circle-down"></i>
-      </button>
-    </form>
+    <>
+      <p className="nb">
+        *create a uniquely named folder to store your selections, a folder name
+        cannot appear more than once*
+      </p>
+      <form onSubmit={submitEntry}>
+        <input
+          type="text"
+          name="selection"
+          placeholder="type in your selections"
+          className="inputbox"
+        />{" "}
+        <label htmlFor="item"></label>
+        <input
+          list="items"
+          name="ticket"
+          id="item"
+          className="datalist-box"
+          placeholder="create unique folder"
+        />
+        <datalist id="items">
+          {[...new Set(values.map((x) => x.ticket))].map((item, index) => (
+            <option key={index}> {item} </option>
+          ))}
+        </datalist>{" "}
+        <button type="submit" className=" plus-btn">
+          {" "}
+          <i className="fas fa-arrow-circle-down"></i>
+        </button>
+      </form>
+    </>
   );
 };
 
