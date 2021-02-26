@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Duplicate Counter",
+  "name": "Duplicate Counter",
   
   "start_url": ".",
   "display": "standalone",

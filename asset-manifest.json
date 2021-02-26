@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/duplicate-counter/static/css/main.27c57d5e.chunk.css",
-    "main.js": "/duplicate-counter/static/js/main.c87a92d3.chunk.js",
-    "main.js.map": "/duplicate-counter/static/js/main.c87a92d3.chunk.js.map",
+    "main.css": "/duplicate-counter/static/css/main.16463dad.chunk.css",
+    "main.js": "/duplicate-counter/static/js/main.2670b1b1.chunk.js",
+    "main.js.map": "/duplicate-counter/static/js/main.2670b1b1.chunk.js.map",
     "runtime-main.js": "/duplicate-counter/static/js/runtime-main.afafd054.js",
     "runtime-main.js.map": "/duplicate-counter/static/js/runtime-main.afafd054.js.map",
     "static/js/2.47e78087.chunk.js": "/duplicate-counter/static/js/2.47e78087.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c9ca703a.chunk.js": "/duplicate-counter/static/js/3.c9ca703a.chunk.js",
     "static/js/3.c9ca703a.chunk.js.map": "/duplicate-counter/static/js/3.c9ca703a.chunk.js.map",
     "index.html": "/duplicate-counter/index.html",
-    "static/css/main.27c57d5e.chunk.css.map": "/duplicate-counter/static/css/main.27c57d5e.chunk.css.map",
+    "static/css/main.16463dad.chunk.css.map": "/duplicate-counter/static/css/main.16463dad.chunk.css.map",
     "static/js/2.47e78087.chunk.js.LICENSE.txt": "/duplicate-counter/static/js/2.47e78087.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.afafd054.js",
     "static/js/2.47e78087.chunk.js",
-    "static/css/main.27c57d5e.chunk.css",
-    "static/js/main.c87a92d3.chunk.js"
+    "static/css/main.16463dad.chunk.css",
+    "static/js/main.2670b1b1.chunk.js"
   ]
 }
