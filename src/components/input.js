@@ -17,10 +17,10 @@ const Input = () => {
 
   return (
     <>
-      <p className ="nb">
-        *create a uniquely named folder to store your selections, a folder name
-        cannot appear more than once*
-      </p>
+      <div className ="nb">
+       <p> *create a uniquely named folder to store your selections, a folder name
+        cannot appear more than once* </p>
+      </div>
       <form onSubmit={submitEntry}>
         <input
           type="text"
