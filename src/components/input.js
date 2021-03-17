@@ -1,8 +1,19 @@
+import { useState } from "react";
 import { useProvider } from "../context";
 import { firestore } from "../firebase";
 
 const Input = () => {
   const values = useProvider("");
+
+  const [inputValue, setinputValue] = useState("");
+
+  const inputHandler = (e) => {
+    setinputValue(e.target.value);
+  };
+
+  const inputHandler2 = (e) => {
+    setinputValue(`${inputValue} ${e.target.value}`);
+  };
 
   const submitEntry = (e) => {
     e.preventDefault();
@@ -20,9 +31,19 @@ const Input = () => {
       <input
         type="text"
         name="selection"
+        value={inputValue}
+        onChange={inputHandler}
         placeholder="type in your selections"
         className="inputbox"
-      />{" "}
+      />
+      <select name="options" onChange={inputHandler2} className="dropdown">
+        <option value="Points">Points</option>
+        <option value="Assists">Assists</option>
+        <option value="Rebounds">Rebounds</option>
+        <hr></hr>
+        <option value="Over">Over</option>
+        <option value="Under">Under</option>
+      </select>
       <label htmlFor="item"></label>
       <input
         list="items"
@@ -35,9 +56,8 @@ const Input = () => {
         {[...new Set(values.map((x) => x.ticket))].map((item, index) => (
           <option key={index}> {item} </option>
         ))}
-      </datalist>{" "}
+      </datalist>
       <button type="submit" className=" plus-btn">
-        {" "}
         <i className="fas fa-arrow-circle-down"></i>
       </button>
     </form>

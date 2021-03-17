@@ -6,7 +6,7 @@
 
 body {
   /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+  background-image: radial-gradient(73% 147%, #e6d4d4 59%, #eeded9 100%),
     radial-gradient(
       91% 146%,
       rgba(255, 255, 255, 0.5) 47%,
@@ -15,6 +15,7 @@ body {
   background-blend-mode: screen;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  position: relative;
 }
 
 form {
@@ -131,17 +132,19 @@ button:focus {
 }
 
 .analysis-btn {
-  color: #f3b860;
+  /* color: #f3b860; */
+  color: #975563d7;
   margin-left: 20px;
   font-size: 40px;
+  transition: all 1s ease;
 }
 
 .analysis-btn:hover {
-  color: #496c8073;
+  color: #80495573;
 }
 
 .analysis-btnopen {
-  color: #496c8073;
+  color: #80495573;
 }
 
 .duplicate {
@@ -176,4 +179,70 @@ button:focus {
   text-align: center;
   padding-top: 20px;
   color: #8d8c8c;
+}
+
+.formcontainer {
+  background-color: #e6dad6;
+  width: 30vw;
+  min-height: 70vh;
+  margin: 0 auto;
+}
+
+.signinform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 60vh;
+  padding-top: 50px;
+}
+
+.signinbtn {
+  background-color: #975563ad;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5%;
+  transition: all 1s ease;
+}
+
+.signinbtn:hover {
+  background-color: #975563f5;
+}
+
+.dropdown {
+  max-width: 100px;
+  padding: 0.8rem;
+  border: none;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.signoutbtn {
+  background: rgb(235, 94, 94);
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5%;
+  width: fit-content;
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  transition: all 1s ease;
+}
+
+.signoutbtn:hover {
+  background: rgb(202, 29, 29);
+}
+
+.signintext {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.signinbottom {
+  font-size: 15px;
 }
