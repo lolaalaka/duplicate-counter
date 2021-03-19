@@ -24,10 +24,8 @@ function useAuthProvider() {
   useEffect(() => {
     let unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        // console.log(parseUser(user));
         setUser(parseUser(user));
       } else {
-        console.log("who be dis?");
         setUser(null);
       }
     });

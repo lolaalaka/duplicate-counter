@@ -5,7 +5,6 @@
 }
 
 body {
-  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
   background-image: radial-gradient(73% 147%, #e6d4d4 59%, #eeded9 100%),
     radial-gradient(
       91% 146%,
@@ -35,6 +34,7 @@ input {
 
 .inputbox {
   min-width: 25vw;
+  grid-area: inputbox;
 }
 
 input:focus {
@@ -43,6 +43,7 @@ input:focus {
 
 .datalist-box {
   max-width: 150px;
+  grid-area: datalistbox;
 }
 
 .datalist-box::placeholder {
@@ -57,6 +58,7 @@ input:focus {
   font-size: 30px;
   margin-left: 10px;
   transition: all 1s ease;
+  grid-area: plusbtn;
 }
 .plus-btn:hover {
   background: #51a872;
@@ -106,7 +108,7 @@ button:focus {
 .container {
   text-align: center;
   margin: 0 auto;
-  max-width: 40%;
+  width: 40%;
 }
 
 .copy {
@@ -148,7 +150,7 @@ button:focus {
 }
 
 .duplicate {
-  max-width: 40%;
+  max-width: fit-content;
   text-align: left;
   margin: 10px auto;
   color: #8d8c8c;
@@ -196,12 +198,19 @@ button:focus {
   padding-top: 50px;
 }
 
+.signinput {
+  width: 300px;
+  background: none;
+  border-bottom: 1px solid rgb(155, 144, 144);
+}
+
 .signinbtn {
   background-color: #975563ad;
   font-size: 15px;
   padding: 10px;
-  width: 100px;
-  border-radius: 5%;
+  min-width: 300px;
+  border-radius: 50px;
+  margin-top: 10px;
   transition: all 1s ease;
 }
 
@@ -215,6 +224,7 @@ button:focus {
   border: none;
   font-size: 0.8rem;
   margin-left: 10px;
+  grid-area: dropdown;
 }
 
 .dropdown:focus {
@@ -228,7 +238,7 @@ button:focus {
   padding: 10px;
   border-radius: 5%;
   width: fit-content;
-  position: absolute;
+  position: fixed;
   left: 90%;
   top: 5%;
   transition: all 1s ease;
@@ -245,4 +255,61 @@ button:focus {
 
 .signinbottom {
   font-size: 15px;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+  .formcontainer {
+    width: 70vw;
+  }
+
+  .signinput {
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .signinbtn {
+    min-width: 200px;
+  }
+
+  .nb {
+    padding-top: 65px;
+  }
+
+  .signoutbtn {
+    top: 3%;
+    left: 77%;
+  }
+
+  .container {
+    max-width: 70%;
+  }
+
+  form {
+    display: grid;
+    grid-template-areas:
+      "inputbox dropdown"
+      "datalistbox plusbtn";
+    row-gap: 10px;
+    padding-top: 50px;
+  }
+  .datalist-box {
+    max-width: 250px;
+  }
+
+  .datalist-box::placeholder {
+    font-size: 1rem;
+  }
+
+  .duplicate {
+    text-align: center;
+  }
+
+  .container {
+    width: 70%;
+  }
+  .duplicatecounter {
+    max-width: 70%;
+  }
 }

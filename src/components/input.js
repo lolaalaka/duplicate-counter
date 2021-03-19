@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useProvider } from "../context";
 import { firestore } from "../firebase";
+import { useAuth } from "../lib/auth";
 
 const Input = () => {
   const values = useProvider("");
 
+  const { user } = useAuth();
   const [inputValue, setinputValue] = useState("");
 
   const inputHandler = (e) => {
@@ -22,7 +24,7 @@ const Input = () => {
 
     firestore
       .collection("tickets")
-      .add(data)
+      .add({ ...data, owner: user.uid })
       .then((id) => e.target.reset());
   };
 

@@ -21,35 +21,38 @@ export default function Authenticate() {
   return (
     <>
       <div className="formcontainer">
-        <form
-          onSubmit={submitForm}
-          // style={{
-          //   height: "100vh",
-          //   width: "100vw",
-          //   display: "grid",
-          //   gridGap: "16px",
-          //   placeContent: "center",
-          // }}
-          className="signinform"
-        >
+        <form onSubmit={submitForm} className="signinform">
           {isNewUser ? (
             <p className="signintext">Welcome, Sign up</p>
           ) : (
-            <p className="signintext">You've been here before? Madeaux</p>
+            <p className="signintext">Sign in!</p>
           )}
 
           <div>
             <label htmlFor="email"></label>
-            <input name="email" type="text" placeholder="Email" />
+            <input
+              name="email"
+              type="text"
+              placeholder="Email"
+              className="signinput"
+              required
+            />
           </div>
 
           <div>
             <label htmlFor="password"></label>
-            <input name="password" type="password" placeholder="Password" />
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              minLength="6"
+              className="signinput"
+              required
+            />
           </div>
-          <div>
-            <label htmlFor="new-user" className="signinbottom">
-              New user? Click here to sign up
+          <div className="signinbottom">
+            <label htmlFor="new-user">
+              Don't have an account? Click here to sign up
             </label>
             <input
               name="new-user"
@@ -60,7 +63,7 @@ export default function Authenticate() {
           </div>
 
           <button type="submit" className="signinbtn">
-            Submit
+            Login
           </button>
         </form>
       </div>
