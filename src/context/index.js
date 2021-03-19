@@ -34,7 +34,7 @@ const ContextProvider = ({ children }) => {
         });
         setValues(temp);
       });
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     if (values.length) {
